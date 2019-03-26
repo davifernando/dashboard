@@ -13,29 +13,110 @@
 
     <title>Document</title>
 </head>
-<body>
-
-    <div class="container">
-        <br />
-
-        <div class="row">
-            <div class="col-md-8">
-                <section class="card card-light">
-                    <header>
-                        <h3 class="card--title">Top Fornecedores</h3>
-                        <h4 class="card--subtitle">Lorem ipsum mi consectetur, ipsum. </h4>
-                    </header>
-
-                    <article class="inverted-bar-container">
-                        <div class="chart--bordless" id="providers-chart"></div>
-                    </article>
-                </section>
+<body class="relative">
+    <header class="colun card-light position-header">
+        <img src="Icons/logo-SIEG.svg" class="sieg">
+        <div>
+            <div>
+                <img src="Icons/Caminho 102.svg" class="icon-header">
+            </div>
+            <div>
+                <img src="Icons/icon_graficos.svg" class="icon-header">
+            </div>
+            <div>
+                <img src="Icons/icon_attached.svg" class="icon-header">
             </div>
         </div>
-<br />
+    </header>
+    <div class="container">
+        <div class="donut-card aling-itens">
+            
+            <div>
+                <div class="dashboard">DashBoard</div>
+                <article class="align-content ajust-content">
+                    <div class="colun relative">    
+                        <div class="flex-end dt-relatorio"><img src="Icons/Caminho 102.svg" class="icnn-relatorio-dt"> Relatório</div>
+                        <div class="zenit">Zenit - Relatório primeiro trimestre 2019</div>
+                    </div>   
+                    <div class="line color-line"></div>
+                    <div>
+                        <div class="flex-end dt-relatorio"><img src="Icons/icon-date.svg" class="icnn-relatorio-dt"> Data</div>
+                        <div class="zenit">01.03.2019</div>
+                    </div>
+                </article>
+            </div>    
+        </div>
         <div class="row">
-            <div class="col-md-8">
-                <div class="card card-light donut-card">
+                <section style="margin: 20px" class="card card-light">
+                        <header class="relative">
+                            <h3 class="card--title">Ticket Médio</h3>
+                            <h4 class="card--subtitle">Lorem ipsum mi consectetur, ipsum. </h4>
+                            <div class="boll"></div>
+                        </header>
+                        <article class="align-content">
+                            <div class="colun relative">    
+                                <div class="text-light text-pp justify-content">Pessoa Física</div>
+                                <div class="moeda">R$ 239,50</div>
+                                <img src="Icons/DownArrow.svg" class="downArrow"/>
+                            </div>   
+                            <div class="line"></div>
+                            <div class="colun relative">
+                                <div class="text-light text-pp justify-content">Pessoa Jurídica</div>
+                                <div class="moeda">R$ 239,50</div>
+                                <img src="Icons/UpArrow.svg" class="downArrow"/>
+                            </div>
+                        </article>
+                </section>
+
+                <section class="card card-light just-content bg-tt-vendas relative">
+                        <header>
+                            <h3 class="card--title color-FFF">Totais de Venda</h3>
+                            <h4 class="card--subtitle color-FFF">Lorem ipsum mi consectetur, ipsum. </h4>
+                            <div class="boll border-fff"></div>
+                            <img src="Icons/Grupo de máscara 2.svg" class="gp-mascara">
+                        </header>
+                        <article>
+                            <div class="font-total">Total</div>
+                            <div class="total">R$ 1.354.030,51</div>
+                        </article>
+                        <article class="align-content ajust-content">
+                            <div class="colun relative">    
+                                <div class="text-light text-pp color-fj">Pessoa Física</div>
+                                <div class="moeda color-FFF">R$ 239,50</div>
+                            </div>   
+                            <div class="line color-line"></div>
+                            <div class="colun relative">
+                                <div class="text-light text-pp color-fj">Pessoa Jurídica</div>
+                                <div class="moeda color-FFF">R$ 239,50</div>
+                            </div>
+                        </article>
+                </section>
+                
+                <section style="margin: 20px" class="card card-light">
+                        <header class="relative">
+                            <h3 class="card--title">Informações Gerais <br>e Parâmetros Utilizados</h3>
+                            <h4 class="card--subtitle">Subtítulo fictício Lorem ipsum</h4>
+                            <div class="boll bollcolor"></div>
+                        </header>
+                        <article class="align-content">
+                            <div class="colun relative">    
+                                <div class="moeda font18"><img src="Icons/Icon-empresa.svg" class="icon-empresa"/> Empresa</div>
+                                <div class="text-light text-pp justify-content font18 margin-top0">Zenit Creative</div>
+                            </div>   
+                            <div class="line line-60"></div>
+                            <div class="colun relative">
+                                <div class="moeda font18"><img src="Icons/Caminho 463.svg" class="icon-empresa"/> CNPJ</div>
+                                <div class="text-light text-pp justify-content font18 margin-top0">99.999.999.0009-09</div>
+                            </div>
+                        </article>
+                        <article class="align-content">
+                            <div class="colun relative">    
+                                <div class="moeda font18"><img src="Icons/Icon-empresa.svg" class="icon-empresa"/> Parâmetros</div>
+                                <div class="text-light text-pp justify-content margin-top0 font8">CFOP<br>DAS<br>SIMPLES<br>NACIONA<br>ISS</div>
+                            </div>   
+                        </article>
+                </section>
+                <!-- <div class="card card-light donut-card">
                     <section>
                         <header>
                             <h3 class="card--title">Número de Arquivos</h3>
@@ -43,7 +124,6 @@
                         </header>
                 
                         <article class="chart--content">
-                            <!-- Markup -->
                             <div class="chart" id="archive-number-chart"></div>
                             
                             <div class="legend">
@@ -61,7 +141,6 @@
                         </header>
                 
                         <article class="chart--content">
-                            <!-- Markup -->
                             <div class="chart" id="archive-value-chart"></div>
                             
                             <div class="legend">
@@ -70,7 +149,7 @@
                                 <p class="text-light">99.999999</p>
                             </div>
                         </article>
-                    </section>
+                    </section> 
                 </div>
             </div>
         </div>
@@ -104,8 +183,7 @@
                         </article>
                     </section>
                 </div>
-            </div>
-        </div>
+        </div>-->
     </div>
    
 
@@ -114,6 +192,6 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/d3.v5.min.js"></script>
     <script src="./js/billboard.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
 </body>
 </html>
