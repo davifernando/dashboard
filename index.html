@@ -16,14 +16,25 @@
 <body>
 
     <div class="container">
+        <br />
+
         <div class="row">
             <div class="col-md-8">
-                <div class="card card-light">
-                    teste
-                </div>
+                <section class="card card-light">
+                    <header>
+                        <h3 class="card--title">Top Fornecedores</h3>
+                        <h4 class="card--subtitle">Lorem ipsum mi consectetur, ipsum. </h4>
+                    </header>
 
-                <br>
-
+                    <article class="inverted-bar-container">
+                        <div class="chart--bordless" id="providers-chart"></div>
+                    </article>
+                </section>
+            </div>
+        </div>
+<br />
+        <div class="row">
+            <div class="col-md-8">
                 <div class="card card-light donut-card">
                     <section>
                         <header>
@@ -67,18 +78,33 @@
         <br />
 
         <div class="row">
-                <div class="col-md-8">
-                    <section class="card card-light">
+            <div class="col-md-8">
+                <div class="card card-light">
+                    <section class="join-left">
                         <header>
                             <h3 class="card--title">Entrada e Saída</h3>
                             <h4 class="card--subtitle">Lorem ipsum mi consectetur, ipsum. </h4>
                         </header>
-
+                        
                         <article>
-                            <div id="BarChart"></div>
+                            <div class="legend legend--normal" id="join-legend"></div>
+                            <div class="chart--bordless" id="join-chart"></div>
+                        </article>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3 class="card--title">Compra e Venda</h3>
+                            <h4 class="card--subtitle">Lorem ipsum mi consectetur, ipsum. </h4>
+                        </header>
+                        
+                        <article>
+                            <div class="legend legend--normal" id="buy-sell-legend"></div>
+                            <div class="chart--bordless" id="buy-sell-chart"></div>
                         </article>
                     </section>
                 </div>
+            </div>
         </div>
     </div>
    

@@ -6,9 +6,12 @@ body {
     background: #EFF0F4;
 }
 
+body, p, span, h1, h2, h3, h4, h5, h6, tspan {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 body, p, span, h1, h2, h3, h4, h5, h6 {
     color: #666666;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -25,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 8px;
     border: none;
     padding: 48px;
+    box-shadow: 0 2px 48px #E3E5ED;
 }
 
 .card p {
@@ -35,7 +39,7 @@ h1,h2,h3,h4,h5,h6 {
     background: #fff;
 }
 
-.card-light .card--title {
+.card-light .card--title, .text-primary {
     color: #1875F0;
 }
 
@@ -123,6 +127,76 @@ p.donut-total {
     width: 18px;
     height: 18px;
     border-radius: 100%;
-    border: solid 2px #000;
+    border: solid 3px #000;
     display: inline-block;
 }
+
+.legend--normal {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.legend--normal div {
+    margin-left: 2.4rem;
+}
+
+/*
+    Join Left Component
+*/
+
+.chart--bordless line,
+.chart--bordless .domain {
+    stroke: none;
+}
+
+.join-left {
+    border-bottom: solid 2px #D9D9D9;
+    padding-bottom: 2rem;
+    margin-bottom: 2.6rem;
+}
+
+#join-chart {
+    height: 220px;
+}
+
+#buy-sell-chart {
+    height: 230px;
+}
+
+#buy-sell-chart path {
+    stroke-width: 2px;
+}
+
+.bb-axis-y {
+    transform: translateX(-16px)
+}
+
+.bb-tooltip th {
+    background: transparent;
+    color: #1875F0;
+}
+
+.bb-tooltip {
+    border-radius: 3px;
+    box-shadow: 0 1px 5px 0 rgba(41, 101, 219, 0.22), 0 0 0 1px rgba(41, 101, 219, 0.22);
+}
+
+.bb-tooltip tbody {
+    margin: .4rem;
+    display: block;
+}
+
+.bb-tooltip, 
+.bb-tooltip * {
+    border: none!important;
+}
+
+.tick tspan {
+    fill: #C6C5CE;
+}
+
+#providers-chart {
+    height: 500px;
+}
+
